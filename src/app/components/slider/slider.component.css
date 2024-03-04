@@ -1,0 +1,44 @@
+.card-slider {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-block: hidden;
+  width: 107.4%;
+  padding: 15px 8px;
+  position: sticky;
+}
+
+.card {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+img {
+  width: 135px;
+  height: 190px;
+  border-radius: 16px;
+}
+
+.card-slider::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+span {
+  position: absolute;
+  transform: translateX(-20%) translateY(90%);
+  font-size: 100px;
+  font-weight: 600;
+  font-family: montserrat;
+  color: #242A32;
+  text-shadow:
+    -1px -1px 0 #0296E5,
+    1px -1px 0 #0296E5,
+    -1px 1px 0 #0296E5,
+    1px 1px 0 #0296E5;
+}
+
+
