@@ -1,4 +1,23 @@
 <div class="container">
   <h3>What do you want to watch?</h3>
-
+  <div class="container-movies">
+      <ul>
+        <li
+          (click)="setActive('Now playing')"
+          [class.active]="activeItem === 'Now playing'"
+        >Now playing</li>
+        <li
+          (click)="setActive('Upcoming')"
+          [class.active]="activeItem === 'Upcoming'"
+        >Upcoming</li>
+        <li
+          (click)="setActive('Top Rated')"
+          [class.active]="activeItem === 'Top Rated'"
+        >Top Rated</li>
+        <li
+          (click)="setActive('Popular')"
+          [class.active]="activeItem === 'Popular'"
+        >Popular</li>
+      </ul>
+  </div>
 </div>

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  activeItem: string = 'Now playing';
 
+  setActive(itemName) {
+    this.activeItem = itemName;
+  }
 }
