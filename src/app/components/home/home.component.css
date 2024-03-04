@@ -6,6 +6,10 @@
   padding: 24px ;
 }
 
+h3 {
+  margin-bottom: 20px;
+}
+
 .container-movies {
   padding: 20px 0;
 }
