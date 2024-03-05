@@ -17,8 +17,8 @@
 }
 
 img {
-  width: 135px;
-  height: 190px;
+  width: 125px;
+  height: 180px;
   border-radius: 16px;
 }
 
@@ -29,7 +29,7 @@ img {
 
 span {
   position: absolute;
-  transform: translateX(-20%) translateY(90%);
+  transform: translateX(-20%) translateY(80%);
   font-size: 100px;
   font-weight: 600;
   font-family: montserrat;

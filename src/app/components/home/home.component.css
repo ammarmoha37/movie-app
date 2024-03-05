@@ -2,7 +2,7 @@
   width: 375px;
   height: 90vh;
   background-color: #242A32;
-  margin: 30px auto;
+  margin: 30px auto ;
   padding: 24px ;
 }
 
@@ -11,7 +11,7 @@ h3 {
 }
 
 .container-movies {
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 ul {
   display: flex;
@@ -23,6 +23,7 @@ ul {
 
 li {
   padding-bottom: 7px;
+  cursor: pointer;
 }
 
 li.active {
@@ -31,8 +32,8 @@ li.active {
 }
 
 .cards {
-  margin: 15px 3px 10px 0;
-  max-height: 250px;
+  margin: 15px 3px 0 ;
+  max-height: 14rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
