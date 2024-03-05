@@ -1,15 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tabs-bar',
   templateUrl: './tabs-bar.component.html',
   styleUrl: './tabs-bar.component.css'
 })
-export class TabsBarComponent {
+export class TabsBarComponent implements OnInit{
+  activePage: string;
 
-  activePage: string = 'home';
+  constructor( private router: Router) { }
 
-  onClick(page) {
-    this.activePage = page;
+  ngOnInit() {
+    const segments = this.router.url.split('/');
+    const path = segments[1];
+    this.activePage = path;
   }
 }

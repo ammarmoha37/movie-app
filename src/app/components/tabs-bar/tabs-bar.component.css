@@ -1,10 +1,14 @@
+.tab-container {
+  min-height: 60px;
+}
+
 .separator {
   width: 114%;
   height: 1px;
   background-color: #0296E5 ;
   margin-top: 0;
   position: relative;
-  bottom: 17px;
+  top: -17px;
   left: -7%;
 }
 .tab-bar {
@@ -38,7 +42,11 @@
     width: 121.5%;
     height: 2px;
     position: relative;
-    bottom: 12px;
+    top: -14px;
     left: -15%;
+  }
+
+  .tab-bar {
+    height: 38px;
   }
 }

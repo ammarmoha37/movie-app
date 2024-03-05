@@ -7,7 +7,7 @@ h3 {
 }
 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 14px;
   font-weight: 200;
   list-style: none;
@@ -15,7 +15,9 @@ ul {
 
 li {
   padding-bottom: 7px;
+  margin: 2px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 li.active {
