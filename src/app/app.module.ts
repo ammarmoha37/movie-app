@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
-import { SliderComponent } from './components/slider/slider.component';
+import { SliderComponent } from './components/home/slider/slider.component';
 import { TabsBarComponent } from './components/tabs-bar/tabs-bar.component';
 
 @NgModule({
