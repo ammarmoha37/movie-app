@@ -6,17 +6,20 @@
   font-size: 18px;
 }
 
+.back, .title, .info {
+  cursor: pointer;
+}
 .container {
-  height: 43.3rem;
+  height: 43.22rem;
 }
 
-.content {
+.search-content {
   margin-top: 10px;
-  max-height: 34.75rem;
+  max-height: 34.6rem;
   overflow-y: scroll;
 }
 
-.content::-webkit-scrollbar {
+.search-content::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
@@ -60,4 +63,35 @@ img {
 
 .rating p {
   color: #FF8700;
+}
+
+.no-result {
+  min-height: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.no-result-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-result-content img {
+  width: 110px;
+  padding: 15px;
+}
+
+.no-result-content p {
+  font-family: montserrat;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 600;
+  padding: 4px;
+}
+
+.no-result-content p:last-child {
+  color: #92929D;
+  font-size: 12px;
 }
