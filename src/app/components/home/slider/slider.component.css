@@ -6,9 +6,9 @@
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-block: hidden;
-  width: 107%;
+  width: 105.9%;
   padding: 20px 10px;
-  position: sticky;
+  position: relative;
 }
 
 .card {

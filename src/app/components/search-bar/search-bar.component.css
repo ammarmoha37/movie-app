@@ -5,6 +5,7 @@
   width: 100%;
   background-color: #3A3F47;
   border-radius: 16px;
+  margin: 5px 0;
 }
 
 #search {
@@ -15,6 +16,7 @@
   border-radius: 16px;
   border: none;
   outline: none;
+  position: relative;
 }
 
 ::placeholder {
@@ -22,8 +24,7 @@
   font-weight: 400;
 }
 
-span {
-  margin-right: 5%;
+svg {
   position: absolute;
-  left: 85%;
+  right: 10%;
 }

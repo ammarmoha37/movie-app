@@ -1,28 +1,20 @@
 .tab-container {
-  min-height: 60px;
+  min-height: 64.5px;
+  width: 375px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #242A32;
+  border-top: 2px solid #0296E5;
 }
 
-.separator {
-  width: 114%;
-  height: 1px;
-  background-color: #0296E5 ;
-  margin-top: 0;
-  position: relative;
-  top: -17px;
-  left: -7%;
-}
-.tab-bar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 35px;
-}
 
 .tab {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3px;
+  padding: 3px 25px;
   margin-left: 7px;
   font-size: 10px;
   cursor: pointer;

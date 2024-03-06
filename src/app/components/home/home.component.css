@@ -1,5 +1,5 @@
 h3 {
-  margin-bottom: 20px;
+  margin-bottom: 7%;
 }
 
 .container-movies {
@@ -14,8 +14,8 @@ ul {
 }
 
 li {
-  padding-bottom: 7px;
-  margin: 2px;
+  padding-bottom: 2.5%;
+  margin: 1%;
   cursor: pointer;
   white-space: nowrap;
 }
@@ -26,12 +26,12 @@ li.active {
 }
 
 .cards {
-  margin: 5% 0;
-  max-height: 14rem;
+  margin: 5% 0 0;
+  max-height: 14.99rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 11px;
   overflow-y: auto;
 }
 
@@ -46,6 +46,14 @@ img {
 }
 
 @media only screen and (max-width: 450px) {
+  h3 {
+    margin: 20px 5px;
+  }
+
+  .container-movies {
+    padding: 5% 0 0;
+  }
+
   .cards {
     margin: 5% 3% 5% 0;
   }

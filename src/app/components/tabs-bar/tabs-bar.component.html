@@ -1,48 +1,45 @@
 <div class="tab-container">
-  <div class="separator"></div>
-  <div class="tab-bar">
-    <div
-      class="tab"
-      routerLink="/home"
-      routerLinkActive="active">
-      <svg
-        *ngIf="activePage === 'home'" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16.5246 22H14.7818H7.34876H5.60596C3.86861 22 2.46021 20.4607 2.46021 18.5618V9.84736C2.4669 9.09967 2.78834 8.39702 3.3316 7.94256L9.26584 2.6853C10.31 1.77157 11.7944 1.77157 12.8386 2.6853L18.799 7.93303C19.3402 8.38935 19.6611 9.09083 19.6704 9.83784V18.5618C19.6704 20.4607 18.2619 22 16.5246 22Z" stroke="#0296E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <div
+    class="tab"
+    routerLink="/home"
+    routerLinkActive="active">
+    <svg
+      *ngIf="activePage === 'home'" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.5246 22H14.7818H7.34876H5.60596C3.86861 22 2.46021 20.4607 2.46021 18.5618V9.84736C2.4669 9.09967 2.78834 8.39702 3.3316 7.94256L9.26584 2.6853C10.31 1.77157 11.7944 1.77157 12.8386 2.6853L18.799 7.93303C19.3402 8.38935 19.6611 9.09083 19.6704 9.83784V18.5618C19.6704 20.4607 18.2619 22 16.5246 22Z" stroke="#0296E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <svg
+      *ngIf="activePage !== 'home'" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.5245 22H14.7817H7.3487H5.6059C3.86855 22 2.46014 20.4607 2.46014 18.5618V9.84736C2.46683 9.09967 2.78828 8.39702 3.33154 7.94256L9.26578 2.6853C10.31 1.77157 11.7943 1.77157 12.8385 2.6853L18.7989 7.93303C19.3401 8.38935 19.661 9.09083 19.6703 9.83784V18.5618C19.6703 20.4607 18.2619 22 16.5245 22Z" stroke="#67686D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      <svg
-        *ngIf="activePage !== 'home'" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16.5245 22H14.7817H7.3487H5.6059C3.86855 22 2.46014 20.4607 2.46014 18.5618V9.84736C2.46683 9.09967 2.78828 8.39702 3.33154 7.94256L9.26578 2.6853C10.31 1.77157 11.7943 1.77157 12.8385 2.6853L18.7989 7.93303C19.3401 8.38935 19.661 9.09083 19.6703 9.83784V18.5618C19.6703 20.4607 18.2619 22 16.5245 22Z" stroke="#67686D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      <span>Home</span>
-    </div>
-    <div
-      class="tab"
-      routerLink="/search"
-      routerLinkActive="active">
-      <svg
-      *ngIf="activePage !== 'search'" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="10.7885" cy="11.7666" rx="8.14181" ry="8.98856" stroke="#67686D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M16.4513 18.4851L19.6433 22" stroke="#67686D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <svg
-        *ngIf="activePage === 'search'" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="10.7886" cy="11.7666" rx="8.14181" ry="8.98856" stroke="#0296E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M16.4514 18.4851L19.6435 22" stroke="#0296E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <span>Search</span>
-    </div>
-    <div
-      class="tab"
-      routerLinkActive="active">
-      <svg
-        *ngIf="activePage === 'watch list'" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6964 18.6316L5.32379 21.881C4.89483 22.1271 4.36636 21.9529 4.12988 21.4874V21.4874C4.06146 21.3432 4.02455 21.1834 4.02209 21.0206V6.62244C4.02209 3.87644 5.72176 2.77805 8.16762 2.77805H13.9133C16.2846 2.77805 18.0588 3.80322 18.0588 6.43937V21.0206C18.0588 21.2804 17.9654 21.5295 17.799 21.7132C17.6326 21.8968 17.407 22 17.1717 22C17.0216 21.9974 16.8741 21.9567 16.7406 21.881L11.3348 18.6316C11.1356 18.5128 10.8956 18.5128 10.6964 18.6316Z" stroke="#0296E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <svg
-        *ngIf="activePage !== 'watch list'" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6963 18.6316L5.32373 21.881C4.89477 22.1271 4.3663 21.9529 4.12982 21.4874V21.4874C4.0614 21.3432 4.02449 21.1834 4.02203 21.0206V6.62244C4.02203 3.87644 5.7217 2.77805 8.16756 2.77805H13.9133C16.2845 2.77805 18.0588 3.80322 18.0588 6.43937V21.0206C18.0588 21.2804 17.9653 21.5295 17.7989 21.7132C17.6326 21.8968 17.4069 22 17.1716 22C17.0216 21.9974 16.874 21.9567 16.7405 21.881L11.3347 18.6316C11.1355 18.5128 10.8955 18.5128 10.6963 18.6316Z" stroke="#67686D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <span>Watch list</span>
-    </div>
+    <span>Home</span>
+  </div>
+  <div
+    class="tab"
+    routerLink="/search"
+    routerLinkActive="active">
+    <svg
+    *ngIf="activePage !== 'search'" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="10.7885" cy="11.7666" rx="8.14181" ry="8.98856" stroke="#67686D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.4513 18.4851L19.6433 22" stroke="#67686D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <svg
+      *ngIf="activePage === 'search'" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="10.7886" cy="11.7666" rx="8.14181" ry="8.98856" stroke="#0296E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.4514 18.4851L19.6435 22" stroke="#0296E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Search</span>
+  </div>
+  <div
+    class="tab"
+    routerLinkActive="active">
+    <svg
+      *ngIf="activePage === 'watch list'" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6964 18.6316L5.32379 21.881C4.89483 22.1271 4.36636 21.9529 4.12988 21.4874V21.4874C4.06146 21.3432 4.02455 21.1834 4.02209 21.0206V6.62244C4.02209 3.87644 5.72176 2.77805 8.16762 2.77805H13.9133C16.2846 2.77805 18.0588 3.80322 18.0588 6.43937V21.0206C18.0588 21.2804 17.9654 21.5295 17.799 21.7132C17.6326 21.8968 17.407 22 17.1717 22C17.0216 21.9974 16.8741 21.9567 16.7406 21.881L11.3348 18.6316C11.1356 18.5128 10.8956 18.5128 10.6964 18.6316Z" stroke="#0296E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <svg
+      *ngIf="activePage !== 'watch list'" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6963 18.6316L5.32373 21.881C4.89477 22.1271 4.3663 21.9529 4.12982 21.4874V21.4874C4.0614 21.3432 4.02449 21.1834 4.02203 21.0206V6.62244C4.02203 3.87644 5.7217 2.77805 8.16756 2.77805H13.9133C16.2845 2.77805 18.0588 3.80322 18.0588 6.43937V21.0206C18.0588 21.2804 17.9653 21.5295 17.7989 21.7132C17.6326 21.8968 17.4069 22 17.1716 22C17.0216 21.9974 16.874 21.9567 16.7405 21.881L11.3347 18.6316C11.1355 18.5128 10.8955 18.5128 10.6963 18.6316Z" stroke="#67686D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Watch list</span>
   </div>
 </div>
