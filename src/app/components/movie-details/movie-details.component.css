@@ -92,3 +92,9 @@ li.active {
   font-weight: 600;
   border-bottom: 4px solid #3A3F47;
 }
+
+.about-movie {
+  margin: 5% 0;
+  font-size: 14px;
+}
+
