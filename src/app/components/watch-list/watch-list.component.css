@@ -66,3 +66,34 @@ img {
 .rating p {
   color: #FF8700;
 }
+
+.no-favorite {
+  min-height: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.no-favorite-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-favorite-content img {
+  width: 110px;
+  padding: 15px;
+}
+
+.no-favorite-content p {
+  font-family: montserrat;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 600;
+  padding: 4px;
+}
+
+.no-favorite-content p:last-child {
+  color: #92929D;
+  font-size: 12px;
+}
