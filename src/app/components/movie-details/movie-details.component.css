@@ -111,8 +111,7 @@ li.active {
 
 .single-review {
   display: flex;
-  align-items: center;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 .user {
@@ -141,3 +140,31 @@ li.active {
   font-weight: 600;
   margin-bottom: 3%;
 }
+
+.cast {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-height: 18.9rem;
+  overflow-y: scroll;
+  padding: 0 7%;
+}
+
+.cast::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.actor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4% 0;
+}
+
+.actor > p {
+  text-align: center;
+  margin-top: 5%;
+  width: 100px;
+}
+
