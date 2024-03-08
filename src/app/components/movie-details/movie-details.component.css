@@ -1,0 +1,94 @@
+.container {
+  height: 47.3rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.back, .bookmark {
+  cursor: pointer;
+}
+
+.movie-poster {
+  margin-left: -6%;
+  border-bottom-left-radius: 6%;
+  border-bottom-right-radius: 6%;
+}
+
+.rating {
+  width: 15%;
+  position: absolute;
+  right: 4%;
+  top: 33.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: rgb(37, 40, 54, 0.4);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.rating p {
+  font-size: 14px;
+  padding: 0.3rem;
+  color: #FF8700;
+}
+
+.movie-title {
+  display: flex;
+  align-items: center;
+}
+
+.movie-title > img {
+  margin-top: -20%;
+  border-radius: 5%;
+}
+
+.movie-title > h3 {
+  margin-left: 5%;
+}
+
+.movie-info {
+  margin: 5% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+.movie-info > p {
+  color: #92929D;
+  font-family: montserrat;
+  font-size: 14px;
+  padding: 2%;
+  margin-left: -3%;
+}
+
+.movie-info .separator {
+  margin-left: 0px;
+}
+
+ul {
+  display: flex;
+  font-size: 14px;
+  font-weight: 200;
+  list-style: none;
+}
+
+li {
+  padding: 2.5% 0;
+  margin: 1% 10% 1% 1%;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+li.active {
+  font-weight: 600;
+  border-bottom: 4px solid #3A3F47;
+}

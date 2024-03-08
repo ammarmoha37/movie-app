@@ -33,6 +33,7 @@ li.active {
   justify-content: flex-end;
   gap: 11px;
   overflow-y: auto;
+  cursor: pointer;
 }
 
 .cards::-webkit-scrollbar {
