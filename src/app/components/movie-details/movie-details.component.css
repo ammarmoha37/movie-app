@@ -98,3 +98,46 @@ li.active {
   font-size: 14px;
 }
 
+.reviews {
+  max-height: 18.9rem;
+  overflow-y: scroll;
+  padding: 1%;
+}
+
+.reviews::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.single-review {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+
+.user > img {
+  width: 45px;
+  border-radius: 50%;
+}
+
+.user > p {
+  margin-top: 20%;
+  color: #0296E5;
+}
+
+.user-review {
+  margin-top: 3%;
+  font-size: 14px;
+}
+
+.user-name {
+  font-weight: 600;
+  margin-bottom: 3%;
+}
