@@ -5,36 +5,26 @@
   <div class="container-movies">
     <ul>
       <li
-        (click)="setActive('Now playing')"
-        [class.active]="activeItem === 'Now playing'"
+        (click)="fetchMoviesByCategory('now_playing')"
+        [class.active]="activeItem === 'now_playing'"
       >Now playing</li>
       <li
-        (click)="setActive('Upcoming')"
-        [class.active]="activeItem === 'Upcoming'"
+        (click)="fetchMoviesByCategory('upcoming')"
+        [class.active]="activeItem === 'upcoming'"
       >Upcoming</li>
       <li
-        (click)="setActive('Top Rated')"
-        [class.active]="activeItem === 'Top Rated'"
+        (click)="fetchMoviesByCategory('top_rated')"
+        [class.active]="activeItem === 'top_rated'"
       >Top Rated</li>
       <li
-        (click)="setActive('Popular')"
-        [class.active]="activeItem === 'Popular'"
+        (click)="fetchMoviesByCategory('popular')"
+        [class.active]="activeItem === 'popular'"
       >Popular</li>
     </ul>
     <div class="cards">
-      <img src="../../../assets/imgs/Movie.jpg" alt="" routerLink="/movie">
-      <img src="../../../assets/imgs/Movie.jpg" alt="">
-      <img src="../../../assets/imgs/Movie.jpg" alt="">
-      <img src="../../../assets/imgs/Movie.jpg" alt="">
-      <img src="../../../assets/imgs/Movie.jpg" alt="">
-      <img src="../../../assets/imgs/Movie.jpg" alt="">
-      <img src="../../../assets/imgs/Movie.jpg" alt="">
-      <img src="../../../assets/imgs/Movie.jpg" alt="">
-      <img src="../../../assets/imgs/Movie.jpg" alt="">
-      <img src="../../../assets/imgs/Movie.jpg" alt="">
-      <img src="../../../assets/imgs/Movie.jpg" alt="">
-      <img src="../../../assets/imgs/Movie.jpg" alt="">
-      <img src="../../../assets/imgs/Movie.jpg" alt="">
+      <div class="movie-card" *ngFor="let movie of movies">
+        <img [src]="movie.img" [alt]="movie.title" routerLink="/movie">
+      </div>
     </div>
   </div>
 </div>
