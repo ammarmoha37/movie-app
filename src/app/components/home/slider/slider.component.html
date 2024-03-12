@@ -1,6 +1,6 @@
 <div class="card-slider">
-  <div class="card"><span class="card-number">1</span><img src="../../../assets/imgs/movie-1.png" alt="movie"></div>
-  <div class="card"><span class="card-number">2</span><img src="../../../assets/imgs/movie-1.png" alt="movie"></div>
-  <div class="card"><span class="card-number">3</span><img src="../../../assets/imgs/movie-1.png" alt="movie"></div>
-  <div class="card"><span class="card-number">4</span><img src="../../../assets/imgs/movie-1.png" alt="movie"></div>
+  <div class="card" *ngFor="let movie of movies; let i = index">
+    <span class="card-number">{{ i + 1 }}</span>
+    <img [src]="movie.img" [alt]="movie.title">
+  </div>
 </div>
