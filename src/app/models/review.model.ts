@@ -1,8 +1,6 @@
-export class Review {
-  constructor(
-    public img: string,
-    public name: string,
-    public comment: string,
-    public rate: number
-  ) { }
+export interface Review {
+  avatar_path: string,
+  name: string,
+  comment: string,
+  rate: string
 }

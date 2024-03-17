@@ -1,6 +1,6 @@
 <div class="card-slider">
   <div class="card" *ngFor="let movie of movies; let i = index">
     <span class="card-number">{{ i + 1 }}</span>
-    <img [src]="movie.img" [alt]="movie.title">
+    <img [src]="movie.img" [alt]="movie.title" [routerLink]="['/movie', movie.id]">
   </div>
 </div>

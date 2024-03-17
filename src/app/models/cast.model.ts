@@ -1,6 +1,4 @@
-export class Cast {
-  constructor(
-    public img: string,
-    public name: string
-  ) { }
+export interface Cast {
+  img: string,
+  name: string
 }

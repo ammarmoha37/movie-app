@@ -15,7 +15,7 @@
 }
 
 .movie-poster {
-  width: 111.5%;
+  width: 111.9%;
   margin-left: -5.9%;
   border-bottom-left-radius: 6%;
   border-bottom-right-radius: 6%;
@@ -47,8 +47,9 @@
 }
 
 .movie-title > img {
-  margin-top: -20%;
-  border-radius: 5%;
+  width: 30%;
+  margin-top: -30%;
+  border-radius: 10%;
 }
 
 .movie-title > h3 {
@@ -60,7 +61,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 90%;
+  width: 100%;
 }
 
 .movie-info > p {
@@ -68,7 +69,8 @@
   font-family: montserrat;
   font-size: 14px;
   padding: 2%;
-  margin-left: -3%;
+  margin-left: -1%;
+  white-space: nowrap;
 }
 
 .movie-info .separator {
@@ -124,6 +126,7 @@ li.active {
 
 .user > img {
   width: 45px;
+  height: 45px;
   border-radius: 50%;
 }
 
@@ -160,7 +163,13 @@ li.active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4% 0;
+  margin: 8% 0;
+}
+
+.actor > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .actor > p {

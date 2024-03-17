@@ -23,7 +23,7 @@
     </ul>
     <div class="cards">
       <div class="movie-card" *ngFor="let movie of movies">
-        <img [src]="movie.img" [alt]="movie.title" routerLink="/movie">
+        <img [src]="movie.img" [alt]="movie.title" [routerLink]="['/movie', movie.id]">
       </div>
     </div>
   </div>

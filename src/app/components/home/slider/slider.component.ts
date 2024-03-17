@@ -22,7 +22,7 @@ export class SliderComponent implements OnInit {
       this.movies = data.results.map((movie: any) => ({
         id: movie.id,
         title: movie.title,
-        img: this.movieService.getMovieImageUrl(movie.poster_path)
+        img: this.movieService.getImageUrl(movie.poster_path)
       }));
     });
   }
