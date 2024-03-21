@@ -12,7 +12,7 @@
   margin-left: 25%;
 }
 
-.back, .title {
+.back {
   cursor: pointer;
 }
 
@@ -28,15 +28,13 @@
 }
 
 .movie-container {
-  margin-top: 10px;
+  margin: 10px 0;
   display: flex;
-}
-
-.movie-container:last-child {
-  margin-bottom: 40px;
+  cursor: pointer;
 }
 
 img {
+  width: 100px;
   border-radius: 17px;
 }
 

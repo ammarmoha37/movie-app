@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Movie } from '../../models/movie.model';
 import { ActivatedRoute } from '@angular/router';
 import { MovieService } from '../../services/movie.service';
+import { WatchListService } from '../../services/watch-list.service';
+import { Movie } from '../../models/movie.model';
 import { Review } from '../../models/review.model';
 import { Cast } from '../../models/cast.model';
 
@@ -13,6 +14,7 @@ import { Cast } from '../../models/cast.model';
 export class MovieDetailsComponent implements OnInit{
   activeItem: string = 'About Movie';
   isRating: boolean = false;
+  isFavorite: boolean = false;
   movieId: number;
   movie: Movie;
   reviews: Review = { name: '', comment: '', avatar_path: '', rate: '' };
@@ -20,13 +22,15 @@ export class MovieDetailsComponent implements OnInit{
 
 
   constructor(private route: ActivatedRoute,
-              private movieService: MovieService) { }
+              private movieService: MovieService,
+              private watchListService: WatchListService) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.movieId = params['id'];
       this.loadMovieDetails();
     });
+    this.getBookmarkState();
   }
 
   loadMovieDetails() {
@@ -62,6 +66,26 @@ export class MovieDetailsComponent implements OnInit{
 
   setActive(itemName) {
     this.activeItem = itemName;
+  }
+
+  addToWatchList () {
+    this.isFavorite = !this.isFavorite;
+    if (this.isFavorite === true)
+      this.watchListService.addToWatchList(this.movie);
+    else
+      this.watchListService.removeFromWatchList(this.movie.id)
+    this.saveBookmarkState();
+  }
+
+  saveBookmarkState() {
+    localStorage.setItem('bookmark_' + this.movieId, JSON.stringify(this.isFavorite));
+  }
+
+  getBookmarkState() {
+    const bookmarkState = localStorage.getItem('bookmark_' + this.movieId);
+    if (bookmarkState) {
+      this.isFavorite = JSON.parse(bookmarkState);
+    }
   }
 
   switchRating() {
