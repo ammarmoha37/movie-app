@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Movie } from '../models/movie.model';
-import { Observable, map } from 'rxjs';
+import { Observable, catchError, map, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,8 @@ export class MovieService {
   }
 
   getImageUrl(imgPath: string): string {
-    return `${this.imgUrl}/w500/${imgPath}`;
+    if (imgPath)
+      return `${this.imgUrl}/w500/${imgPath}`;
   }
 
   getMovieDetails(movieId: number): Observable<Movie> {
@@ -39,7 +40,7 @@ export class MovieService {
           genres: data.genres
         };
       }),
-    )
+    );
   }
 
   getMovieCredits(movieId: number): Observable<any> {
@@ -52,5 +53,15 @@ export class MovieService {
     return this.http.get<Movie[]>(url);
   }
 
+  getMovieDuration(movieId: number): Observable<number> {
+    const url = `${this.apiUrl}/movie/${movieId}?api_key=${this.apiKey}`;
+    return this.http.get<any>(url).pipe(
+      map((data: any) => {
+        if (data && data.runtime) {
+          return +data.runtime;
+        }
+      })
+    );
+  }
 
 }

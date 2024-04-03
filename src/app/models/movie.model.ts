@@ -7,5 +7,10 @@ export interface Movie {
   duration: number,
   rate: string,
   about: string,
-  genres: []
+  genres: string[]
+}
+
+export interface Genre {
+  id: number,
+  name: string
 }

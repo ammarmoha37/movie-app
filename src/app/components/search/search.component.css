@@ -25,15 +25,12 @@
 }
 
 .movie-container {
-  margin-top: 10px;
+  margin: 10px 0;
   display: flex;
 }
 
-.movie-container:last-child {
-  margin-bottom: 40px;
-}
-
 img {
+  width: 100px;
   border-radius: 17px;
 }
 
