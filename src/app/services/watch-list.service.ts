@@ -16,7 +16,6 @@ export class WatchListService {
   addToWatchList(movie: any) {
     this.watchList.push(movie);
     this.saveWatchList();
-    console.log(this.watchList);
   }
 
   removeFromWatchList(movieId: number) {
@@ -25,7 +24,6 @@ export class WatchListService {
       this.watchList.splice(index, 1);
     }
     this.saveWatchList()
-    console.log(this.watchList);
   }
 
   private saveWatchList() {

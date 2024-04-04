@@ -1,15 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Movie } from '../models/movie.model';
-import { Observable, catchError, map, throwError } from 'rxjs';
+import { Observable, map } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MovieService {
-  private apiKey = 'a2d2480920355ce6caf3dd6bc2bfbbdc';
-  private apiUrl = 'https://api.themoviedb.org/3'
-  private imgUrl = 'https://image.tmdb.org/t/p';
+  private apiKey = environment.API_KEY;
+  private apiUrl = environment.ROOT_URL;
+  private imgUrl = environment.IMAGE_URL;
 
 
   constructor(private http: HttpClient) { }

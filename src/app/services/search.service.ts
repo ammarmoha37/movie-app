@@ -2,13 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, forkJoin, map } from 'rxjs';
 import { Genre } from '../models/movie.model';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SearchService {
-  private apiKey = 'a2d2480920355ce6caf3dd6bc2bfbbdc';
-  private apiUrl = 'https://api.themoviedb.org/3';
+  private apiKey = environment.API_KEY;
+  private apiUrl = environment.ROOT_URL;
 
   constructor(private http: HttpClient) { }
 

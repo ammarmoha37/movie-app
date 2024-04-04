@@ -42,24 +42,21 @@ export class MovieDetailsComponent implements OnInit{
 
         this.movieService.getMovieReviews(this.movieId)
           .subscribe(data => {
-            console.log(data);
-              this.reviews = data.results.map(review => ({
-                name: review.author,
-                comment: review.content,
-                avatar_path : review.author_details.avatar_path ? this.movieService.getImageUrl(review.author_details.avatar_path) : '',
-                rate: review.author_details?.rating ? parseFloat(review.author_details.rating).toFixed(1) : ''
-              }));
+            this.reviews = data.results.map(review => ({
+              name: review.author,
+              comment: review.content,
+              avatar_path : review.author_details.avatar_path ? this.movieService.getImageUrl(review.author_details.avatar_path) : '',
+              rate: review.author_details?.rating ? parseFloat(review.author_details.rating).toFixed(1) : ''
+            }));
           });
 
         this.movieService.getMovieCredits(this.movieId)
           .subscribe(data => {
-            console.log(data);
             this.casts = data.cast.map(cast => ({
               name : cast.original_name,
               img : cast.profile_path ? this.movieService.getImageUrl(cast.profile_path) : ''
             }));
           });
-        console.log(data);
       });
   }
 

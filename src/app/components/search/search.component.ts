@@ -20,7 +20,6 @@ export class SearchComponent {
 
     this.searchService.getGenres().subscribe(
       (data: Genre[]) => {
-        console.log(data);
         this.genres = data;
       });
 
