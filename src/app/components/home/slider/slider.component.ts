@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Movie } from '../../../models/movie.model';
-import { MovieService } from '../../../services/movie.service';
+import { Movie } from '@models/movie.model';
+import { MovieService } from '@services/movie.service';
 
 @Component({
   selector: 'app-slider',

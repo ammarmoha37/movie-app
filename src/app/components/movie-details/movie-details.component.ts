@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MovieService } from '../../services/movie.service';
-import { WatchListService } from '../../services/watch-list.service';
-import { Movie } from '../../models/movie.model';
-import { Review } from '../../models/review.model';
-import { Cast } from '../../models/cast.model';
+import { MovieService } from '@services/movie.service';
+import { WatchListService } from '@services/watch-list.service';
+import { Movie } from '@models/movie.model';
+import { Review } from '@models/review.model';
+import { Cast } from '@models/cast.model';
 
 @Component({
   selector: 'app-movie-details',

@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, forkJoin, map } from 'rxjs';
-import { Genre } from '../models/movie.model';
-import { environment } from '../../environments/environment';
+import { environment } from '@environments/environment';
+import { Genre } from '@models/movie.model';
+import { Observable, map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
