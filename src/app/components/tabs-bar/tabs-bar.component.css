@@ -29,7 +29,10 @@
   color: #0296E5;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) and (min-height: 600px) {
+  .tab-container {
+    width: 100%;
+  }
   .separator {
     width: 121.5%;
     height: 2px;

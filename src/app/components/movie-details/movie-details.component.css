@@ -270,3 +270,43 @@ button {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 300px) {
+  .container {
+    max-height: 40.85rem;
+  }
+
+  .movie-poster {
+    width: 117%;
+    margin-left: -9%;
+  }
+
+  .rating {
+    width: 18%;
+    top: 30%;
+  }
+
+  .reviews, .cast {
+    max-height: 17.5rem;
+  }
+}
+
+@media only screen and (min-width: 301px) and (max-width: 450px) {
+  .container {
+    max-height: 41.7rem;
+  }
+
+  .reviews, .cast {
+    max-height: 13.4rem;
+  }
+}
+
+@media only screen and (max-width: 450px) and (min-height: 700px) {
+  .container {
+    min-height: 100vh;
+    width: 101%;
+  }
+
+  .reviews, .cast {
+    max-height: 27rem;
+  }
+}

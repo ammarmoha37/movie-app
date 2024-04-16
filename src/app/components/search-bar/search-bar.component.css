@@ -28,3 +28,19 @@ svg {
   position: absolute;
   right: 10%;
 }
+
+@media only screen and (max-width: 450px) {
+  #search {
+    height: 35px;
+  }
+}
+
+@media only screen and (max-width: 450px) and (min-height: 700px) {
+  .search-bar {
+    margin: 10px;
+  }
+
+  #search {
+    height: 45px;
+  }
+}

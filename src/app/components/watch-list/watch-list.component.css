@@ -95,3 +95,36 @@ img {
   color: #92929D;
   font-size: 12px;
 }
+
+@media only screen and (max-width: 300px) {
+  .container {
+    width: 100vw;
+    height: 24rem;
+  }
+
+  .favorite-items {
+    max-height: 32rem;
+  }
+}
+
+@media only screen and (min-width: 301px) and (max-width: 450px) {
+  .container {
+    width: 100vw;
+    height: 24rem;
+  }
+
+  .favorite-items {
+    max-height: 33rem;
+  }
+}
+
+@media only screen and (max-width: 450px) and (min-height: 700px) {
+  .container {
+    width: 100vw;
+    height: 24rem;
+  }
+
+  .favorite-items {
+    max-height: 48rem;
+  }
+}

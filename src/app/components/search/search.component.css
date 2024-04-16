@@ -6,7 +6,7 @@
   font-size: 18px;
 }
 
-.back, .title, .info {
+.back, .info {
   cursor: pointer;
 }
 .container {
@@ -90,4 +90,36 @@ img {
 .no-result-content p:last-child {
   color: #92929D;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 300px) {
+  .container {
+    width: 100vw;
+    height: 25rem;
+  }
+
+  .search-content {
+    max-height: 28.5rem;
+  }
+}
+@media only screen and (min-width: 301px) and (max-width: 450px) {
+  .container {
+    width: 100vw;
+    height: 25rem;
+  }
+
+  .search-content {
+    max-height: 29rem;
+  }
+}
+
+@media only screen and (max-width: 450px) and (min-height: 700px) {
+  .container {
+    width: 100vw;
+    height: 25rem;
+  }
+
+  .search-content {
+    max-height: 43rem;
+  }
 }
